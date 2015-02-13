@@ -42,5 +42,16 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#################
+## Sublime Text
+#################
+*.sublime-project
+
+*.sublime-workspace
+
+
+#################
+## Directories
+#################
 .sass-cache
-node_modules
+node_modules/
