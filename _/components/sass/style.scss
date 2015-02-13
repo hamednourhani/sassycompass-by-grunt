@@ -1,7 +1,7 @@
 /*This is a comment for developers*/
 @import "susy";
-$color : #fefef8;
+$color : #fefef9;
 body {
-	background-color: $color/2; 
+	background-color: $color; 
 	@include container(70em);
 }
