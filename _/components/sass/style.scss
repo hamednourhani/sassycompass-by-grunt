@@ -1,7 +1,9 @@
 /*This is a comment for developers*/
+@import "compass";
 @import "susy";
-$color : #fefef9;
-body {
-	background-color: $color; 
-	@include container(66em);
-}
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";
