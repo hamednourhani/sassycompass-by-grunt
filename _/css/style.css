@@ -1,4 +1,6 @@
 /*This is a comment for developers*/
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|MerriWeather");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /* line 5, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -55,7 +57,15 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 1, ../components/sass/_base.scss */
+/* line 4, ../components/sass/_base.scss */
 body {
   background-color: #1f1a0c;
-  color: #78b9e6; }
+  color: #78b9e6;
+  font-family: MerriWeather, Serif; }
+
+/* line 9, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Bree Serif, Serif;
+  font-weight: normal;
+  line-height: 160%;
+  font-size: 1.2rem; }
