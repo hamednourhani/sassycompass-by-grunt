@@ -61,11 +61,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   background-color: #1f1a0c;
   color: #78b9e6;
-  font-family: MerriWeather, Serif; }
+  font-family: MerriWeather, Serif;
+  font-size: 1.2rem;
+  line-height: 160%; }
 
-/* line 9, ../components/sass/_base.scss */
+/* line 11, ../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Bree Serif, Serif;
   font-weight: normal;
-  line-height: 160%;
-  font-size: 1.2rem; }
+  text-shadow: #586e75 1px 1px; }
+
+/* line 16, ../components/sass/_base.scss */
+h1 {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 19, ../components/sass/_base.scss */
+a {
+  text-decoration: none;
+  color: #268bd2; }
+  /* line 22, ../components/sass/_base.scss */
+  a:hover {
+    color: #dc322f; }
+
+/* line 27, ../components/sass/_base.scss */
+p {
+  margin-bottom: 10px; }

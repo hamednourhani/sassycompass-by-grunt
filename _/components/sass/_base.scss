@@ -6,10 +6,26 @@ body {
 	color : lighten($blue , 20);
 	font-family : $font-primary;
 	font-size : 1.2rem;
+	line-height : 160%;
 }
 #{headings()}{
 	font-family : $font-secondary;
 	font-weight : normal;
-	line-height : 160%;
-	font-size : 1.2rem;
+	@include text-shadow($base01 1px 1px);
+}
+h1{
+	@include clearfix;
+}
+a{
+	text-decoration : none;
+	color : $blue;
+	&:hover{
+		color : $red;
+	}
+}
+
+p{
+	margin:{
+		bottom: 10px;
+	}
 }
