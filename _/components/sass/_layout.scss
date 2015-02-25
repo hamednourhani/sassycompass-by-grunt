@@ -1,0 +1,39 @@
+//layout ------------------------------------
+
+.layout {
+	padding: 3%;
+}
+
+//header ------------------------------------
+header {
+	img {
+		width : 95%;
+		margin : 2.5%;
+		max-width : 1000px;
+		margin : {
+			bottom : 0;
+		}
+	}
+}
+
+
+
+//navigation ------------------------------------
+.navigation {
+	background : lighten($blue, 50);
+	ul.nav{
+		li{
+			i{
+				color : lighten($yellow, 30);
+				padding-right: .5em;
+			}
+			a{
+				display: block;
+				text-decoration : none;
+				padding: 5px 10px;
+				color : darken($yellow, 20);
+				}
+				
+			}
+		}
+	}

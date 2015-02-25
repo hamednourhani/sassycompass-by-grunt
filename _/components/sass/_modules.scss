@@ -1,0 +1,25 @@
+// speakers -------------------------------------
+.speakerslist{
+	.speakers{
+		img {
+			@include border-radius;
+		}
+	}
+}
+
+// social icons -------------------------------------
+.socialmedia {
+	&>span {
+		float : left;
+	}
+	.social-item{
+		img{
+			float : left;
+			@include border-radius(50%);
+			width : 30px;
+			padding : 5px 0;
+		}
+	}
+
+}
+

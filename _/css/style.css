@@ -87,3 +87,46 @@ a {
 /* line 27, ../components/sass/_base.scss */
 p {
   margin-bottom: 10px; }
+
+/* line 3, ../components/sass/_layout.scss */
+.layout {
+  padding: 3%; }
+
+/* line 9, ../components/sass/_layout.scss */
+header img {
+  width: 95%;
+  margin: 2.5%;
+  max-width: 1000px;
+  margin-bottom: 0; }
+
+/* line 22, ../components/sass/_layout.scss */
+.navigation {
+  background: #f9fcfe; }
+  /* line 26, ../components/sass/_layout.scss */
+  .navigation ul.nav li i {
+    color: #ffd44f;
+    padding-right: .5em; }
+  /* line 30, ../components/sass/_layout.scss */
+  .navigation ul.nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #4f3c00; }
+
+/* line 4, ../components/sass/_modules.scss */
+.speakerslist .speakers img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 12, ../components/sass/_modules.scss */
+.socialmedia > span {
+  float: left; }
+/* line 16, ../components/sass/_modules.scss */
+.socialmedia .social-item img {
+  float: left;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  padding: 5px 0; }
