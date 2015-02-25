@@ -1,7 +1,63 @@
-//layout ------------------------------------
+//susy setup ------------------------------------
 
+$total-columns : 12;
+$column-width : 4em;
+$gutter-width : 1em;
+$grid-padding : $gutter-width;
+
+@include border-box-sizing;
+
+$small : 30em;
+$medium : 45em;
+$larg : 75em;
+
+//content
 .layout {
+	@include container;
 	padding: 3%;
+
+	.primary{
+		margin:{
+			top : .2em;
+		}
+		@include at-breakpoint($medium) {
+		  @include span-columns(8,12);
+
+		  #nextmeeting {
+		  	@include border-radius(20px);
+		  	color : lighten($yellow, 40);
+		  	margin: {
+		  		bottom: 10px;
+		  	}
+		  	background : $cyan;
+		  	padding: 0 20px 20px 20px;
+
+		  	h1{
+		  		color : darken($cyan ,15);
+		  		border : none;
+		  		text-shadow : none;
+		  		margin-bottom: 20px;
+		  	}
+		  	a{
+		  		color : $blue;
+		  	}
+		  }
+
+		}
+	}//primary
+
+	//secondary ------------------------------
+	.secondary{
+		@include at-breakpoint($medium){
+			@include span-columns(4 omega,12);
+			font-size : 1.1rem;
+			h1{
+				font-size : 1.8rem;
+				color : $orange;
+			}
+
+		}
+	}
 }
 
 //header ------------------------------------
@@ -12,6 +68,17 @@ header {
 		max-width : 1000px;
 		margin : {
 			bottom : 0;
+		}
+	}
+	.hero{
+		width :100%;
+		@include at-breakpoint($medium) {
+			position: relative;
+			display: block;
+			widows: 100%;
+			height: 450px;
+			@include background(image-url('thumbnails/img-100.png'));								
+		  
 		}
 	}
 }
