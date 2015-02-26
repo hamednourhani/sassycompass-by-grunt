@@ -304,3 +304,23 @@ footer {
   border-radius: 50%;
   width: 30px;
   padding: 5px 0; }
+
+/* line 22, ../components/sass/_modules.scss */
+.box, .important, .success {
+  margin: 0 auto 25px;
+  border: 1px-solid;
+  padding: 15px;
+  border-radius: 5px; }
+  /* line 27, ../components/sass/_modules.scss */
+  .box em, .important em, .success em {
+    text-decoration: underline; }
+
+/* line 32, ../components/sass/_modules.scss */
+.important {
+  background-color: #ffe5e5;
+  border-color: red; }
+
+/* line 37, ../components/sass/_modules.scss */
+.success {
+  background-color: #e6fffe;
+  border-color: green; }

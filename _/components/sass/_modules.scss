@@ -19,3 +19,23 @@
 
 }
 
+.box{
+	margin: 0 auto 25px;
+	border:1px-solid;
+	padding: 15px;
+	border-radius:5px;
+	em{
+		text-decoration : underline;
+	}
+}
+
+.important {
+	@extend .box;
+	background-color: #ffe5e5;
+	border-color: red;
+}
+.success{
+	@extend .box;
+	background-color: #e6fffe;
+	border-color: green;
+}
