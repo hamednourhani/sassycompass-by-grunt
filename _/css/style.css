@@ -57,7 +57,47 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 4, ../components/sass/_base.scss */
+/* line 120, icon/*.png */
+.icon-sprite, .icon-dribble, .icon-facebook, .icon-google, .icon-linkdin, .icon-twitter {
+  background-image: url('../images/icon-seb64ece646.png');
+  background-repeat: no-repeat; }
+
+/* line 84, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-dribble {
+  background-position: 0 0; }
+  /* line 59, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+  .icon-dribble:hover, .icon-dribble.dribble-hover {
+    background-position: 0 -51px; }
+
+/* line 84, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-facebook {
+  background-position: 0 -102px; }
+  /* line 59, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+  .icon-facebook:hover, .icon-facebook.facebook-hover {
+    background-position: 0 -153px; }
+
+/* line 84, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-google {
+  background-position: 0 -204px; }
+  /* line 59, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+  .icon-google:hover, .icon-google.google-hover {
+    background-position: 0 -255px; }
+
+/* line 84, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-linkdin {
+  background-position: 0 -306px; }
+  /* line 59, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+  .icon-linkdin:hover, .icon-linkdin.linkdin-hover {
+    background-position: 0 -357px; }
+
+/* line 84, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-twitter {
+  background-position: 0 -408px; }
+  /* line 59, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+  .icon-twitter:hover, .icon-twitter.twitter-hover {
+    background-position: 0 -459px; }
+
+/* line 6, ../components/sass/_base.scss */
 body {
   background-color: #1f1a0c;
   color: #78b9e6;
@@ -65,26 +105,26 @@ body {
   font-size: 1.2rem;
   line-height: 160%; }
 
-/* line 11, ../components/sass/_base.scss */
+/* line 13, ../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Bree Serif, Serif;
   font-weight: normal;
   text-shadow: #586e75 1px 1px; }
 
-/* line 16, ../components/sass/_base.scss */
+/* line 18, ../components/sass/_base.scss */
 h1 {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 19, ../components/sass/_base.scss */
+/* line 21, ../components/sass/_base.scss */
 a {
   text-decoration: none;
   color: #268bd2; }
-  /* line 22, ../components/sass/_base.scss */
+  /* line 24, ../components/sass/_base.scss */
   a:hover {
     color: #dc322f; }
 
-/* line 27, ../components/sass/_base.scss */
+/* line 29, ../components/sass/_base.scss */
 p {
   margin-bottom: 10px; }
 
@@ -210,10 +250,10 @@ header .hero {
     display: inline-block; }
   /* line 104, ../components/sass/_layout.scss */
   .navigation ul.nav li a {
-    -moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
     display: inline-block;
     text-decoration: none;
     padding: 5px 10px;
@@ -221,10 +261,10 @@ header .hero {
     /* line 110, ../components/sass/_layout.scss */
     .navigation ul.nav li a:hover {
       background: #dc322f;
-      -moz-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      -webkit-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out; }
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
       /* line 116, ../components/sass/_layout.scss */
       .navigation ul.nav li a:hover a {
         color: #ffc81c; }
@@ -291,7 +331,22 @@ header .hero {
 footer {
   overflow: hidden;
   *zoom: 1;
-  background: #859900; }
+  background: #859900;
+  border-color: #111306; }
+
+/* line 185, ../components/sass/_layout.scss */
+.icon-twitter,
+.icon-google,
+.icon-facebook,
+.icon-dribble,
+.icon-linkdin {
+  width: 64px;
+  height: 64px;
+  display: block;
+  -moz-transition: background 0.3s ease-out;
+  -o-transition: background 0.3s ease-out;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out; }
 
 /* line 8, ../components/sass/_modules.scss */
 .socialmedia > span {
@@ -302,8 +357,8 @@ footer {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  width: 30px;
-  padding: 5px 0; }
+  width: 64px;
+  padding: 0; }
 
 /* line 22, ../components/sass/_modules.scss */
 .box, .important, .success {
@@ -317,10 +372,10 @@ footer {
 
 /* line 32, ../components/sass/_modules.scss */
 .important {
-  background-color: #ffe5e5;
-  border-color: red; }
+  background-color: #dc322f;
+  border-color: #553737; }
 
-/* line 37, ../components/sass/_modules.scss */
+/* line 35, ../components/sass/_modules.scss */
 .success {
-  background-color: #e6fffe;
-  border-color: green; }
+  background-color: #859900;
+  border-color: #111306; }

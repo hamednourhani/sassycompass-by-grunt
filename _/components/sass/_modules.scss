@@ -12,8 +12,8 @@
 		img{
 			float : left;
 			@include border-radius(50%);
-			width : 30px;
-			padding : 5px 0;
+			width : 64px;
+			padding :0;
 		}
 	}
 
@@ -30,12 +30,8 @@
 }
 
 .important {
-	@extend .box;
-	background-color: #ffe5e5;
-	border-color: red;
+	@include colored_box($red);
 }
 .success{
-	@extend .box;
-	background-color: #e6fffe;
-	border-color: green;
+	@include colored_box($green);
 }

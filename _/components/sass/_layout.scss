@@ -102,14 +102,14 @@ header {
 				display : inline-block;
 			}
 			a{
-				@include single-transition(all,.5s,ease-in);
+				@include transition;
 				display: inline-block;
 				text-decoration : none;
 				padding: 5px 10px;
 				color : darken($yellow, 20);
 				&:hover{
 					background : $red;
-					@include single-transition(all,.5s,ease-out);
+					@include transition;
 					@include at-breakpoint($medium){
 
 					}
@@ -178,4 +178,18 @@ header {
 	footer{
 		@include clearfix;
 		@include background($green);
+		border-color:  border-color($green);
+		
+		
+	}
+	.icon-twitter,
+	.icon-google,
+	.icon-facebook,
+	.icon-dribble,
+	.icon-linkdin{
+		width : 64px;
+		height : 64px;
+		display : block;
+		
+		@include single-transition(background,0.3s,ease-out);
 	}
