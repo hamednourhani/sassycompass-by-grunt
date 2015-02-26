@@ -14,13 +14,14 @@ $larg : 75em;
 //content
 .layout {
 	@include container;
-	padding: 3%;
+	padding: 0 3%;
 
 	.primary{
 		margin:{
 			top : .2em;
 		}
 		@include at-breakpoint($medium) {
+			@include single-transition(all ,3s ,ease-out);
 		  @include span-columns(8,12);
 
 		  #nextmeeting {
@@ -73,6 +74,7 @@ header {
 	.hero{
 		width :100%;
 		@include at-breakpoint($medium) {
+			@include single-transition(all ,3s ,ease-out);
 			position: relative;
 			display: block;
 			widows: 100%;
@@ -89,18 +91,91 @@ header {
 .navigation {
 	background : lighten($blue, 50);
 	ul.nav{
+		@include at-breakpoint($medium){
+			
+			@include horizontal-list;
+		}
 		li{
 			i{
 				color : lighten($yellow, 30);
 				padding-right: .5em;
+				display : inline-block;
 			}
 			a{
-				display: block;
+				@include single-transition(all,.5s,ease-in);
+				display: inline-block;
 				text-decoration : none;
 				padding: 5px 10px;
 				color : darken($yellow, 20);
+				&:hover{
+					background : $red;
+					@include single-transition(all,.5s,ease-out);
+					@include at-breakpoint($medium){
+
+					}
+					a{
+						color : lighten($yellow,20);
+					}
+				}
 				}
 				
 			}
 		}
+	}
+
+	//speakers list --------------------------------------
+	
+	.speakerslist{
+		@include single-transition (all, 0.5s ,ease-out);
+		.speakers{
+			img {
+				@include border-radius(50%);
+			}
+		}
+
+		@include at-breakpoint($medium){
+			text-align : center;
+			@include background(linear-gradient(top,darken($blue,60),$blue));
+			color : rgba($violet,.5);
+			overflow: hidden;
+			#{headings()}{
+				text-shadow: none;
+				border : none;
+			}
+			
+			artists img{
+				float : none;
+				width : 40%;
+				max-width : 170px;
+				margin : 0 auto;
+
+			}
+			p{
+				font-weight : 200 important;
+				text-align : left;
+				font-size : 0.8em;
+				line-height : 0;
+				@include single-transition(all ,0.5s ,ease-out);
+				opacity : 0;
+			}
+			&:hover {
+				p{
+					line-height : 1.5em;
+					opacity : 1;
+					
+				}
+			}
+			.artists{
+				@include span-columns(4,12);
+
+			}
+			.artists:nth-of-type(3){
+				@include span-columns(4 omega ,12);
+			}
+		}
+	}
+
+	footer{
+		@include clearfix;
+		@include background($green);
 	}
